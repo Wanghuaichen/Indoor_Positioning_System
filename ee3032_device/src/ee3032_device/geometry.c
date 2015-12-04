@@ -55,6 +55,7 @@ tVector geoMagVectorInertialFrameZRotationIgnored(tVector vMagBody, tEulerAngle 
 	vMagInertial.vx += c3 * s2 * vMagBody.vz;
 	vMagInertial.vy = 0.0;
 	vMagInertial.vy += c3 * vMagBody.vy;
+	// sign seem wrong here
 	vMagInertial.vy += s3 * vMagBody.vz;
 	vMagInertial.vz = -s2 * vMagBody.vx;
 	vMagInertial.vz += c2 * s3 * vMagBody.vy;
